@@ -1,10 +1,11 @@
 class PostSerializer
 
+
   def self.serialize(post)
     #start with the open brace to create a valid JSON objects
     serialized_post = '{'
 
-    serialized_post += '"id"; ' + post.id.to_s + ', '
+    serialized_post += '"id": ' + post.id.to_s + ', '
     serialized_post += '"title": "' + post.title + '", '
 
     serialized_post += '"description": "' + post.description + '", '
